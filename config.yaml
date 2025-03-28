@@ -1,0 +1,15 @@
+config:
+  title: 终端命令提示工具
+  commands:
+    - command: "cd [path]"
+      args:
+        - name: path
+          description: 需要跳转到的路径
+      description: 跳转到指定路径
+    - command: "[command] grep | [filter]"
+      args:
+        - name: command
+          description: 需要过滤的命令
+        - name: filter
+          description: 需要过滤的字符串
+      description: 执行命令，并且按照关键字进行过滤结果
